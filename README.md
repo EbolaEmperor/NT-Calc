@@ -20,3 +20,4 @@
 - 二次剩余：选择residue-sqrt，然后依次输入模数、要开方的数
 - 欧拉函数：选择phi(Eular)，然后输入要求欧拉函数的数
 - 素数测试：选择prime judge，然后输入待测试的数
+- 质因数分解：选择prime factorization，然后输入待分解的数
