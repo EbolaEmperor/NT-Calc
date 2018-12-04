@@ -11,6 +11,7 @@ def clickMe():
     if ty==2 : cmd = "./compiled/inverse "+var
     if ty==3 : cmd = "./compiled/residue-2 "+var
     if ty==4 : cmd = "./compiled/phi "+var
+    if ty==5 : cmd = "./compiled/miller_rabbin "+var
     ans = commands.getoutput(cmd)
     tkMessageBox.showinfo('Solved!',ans)
 
@@ -23,7 +24,7 @@ label1=tk.Label(win, text="Choose Type:")
 label1.grid(column=1, row=1)
 number = tk.StringVar()
 numberChosen = ttk.Combobox(win, width=16, textvariable=number)
-numberChosen['values'] = ('gcd', 'pow', 'inverse', 'residue-sqrt', 'phi(Eular)')
+numberChosen['values'] = ('gcd', 'pow', 'inverse', 'residue-sqrt', 'phi(Eular)', 'prime judge')
 numberChosen.grid(column=1, row=2)
 numberChosen.current(0)
 
