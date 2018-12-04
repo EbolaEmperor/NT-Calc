@@ -6,3 +6,4 @@ g++ algorithm/residue-2.cpp -o compiled/residue-2
 g++ algorithm/phi.cpp -o compiled/phi
 g++ algorithm/miller_rabbin.cpp -o compiled/miller_rabbin
 g++ algorithm/pollard_rho.cpp -o compiled/pollard_rho
+g++ algorithm/binom.cpp -o compiled/binom

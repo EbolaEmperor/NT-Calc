@@ -13,6 +13,7 @@ def clickMe():
     if ty==4 : cmd = "./compiled/phi "+var
     if ty==5 : cmd = "./compiled/miller_rabbin "+var
     if ty==6 : cmd = "./compiled/pollard_rho "+var
+    if ty==7 : cmd = "./compiled/binom "+var
     ans = commands.getoutput(cmd)
     tkMessageBox.showinfo('Solved!',ans)
 
@@ -25,7 +26,7 @@ label1=tk.Label(win, text="Choose Type:")
 label1.grid(column=1, row=1)
 number = tk.StringVar()
 numberChosen = ttk.Combobox(win, width=16, textvariable=number)
-numberChosen['values'] = ('gcd', 'pow', 'inverse', 'residue-sqrt', 'phi(Eular)', 'prime judge', 'prime factorization')
+numberChosen['values'] = ('gcd', 'pow', 'inverse', 'residue-sqrt', 'phi(Eular)', 'prime judge', 'prime factorization', 'binom')
 numberChosen.grid(column=1, row=2)
 numberChosen.current(0)
 
