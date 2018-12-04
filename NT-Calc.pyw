@@ -29,7 +29,7 @@ numberChosen['values'] = ('gcd', 'pow', 'inverse', 'residue-sqrt', 'phi(Eular)',
 numberChosen.grid(column=1, row=2)
 numberChosen.current(0)
 
-label3=tk.Label(win, text="Commands:")
+label3=tk.Label(win, text="Arguments:")
 label3.grid(column=1, row=5)
 entry1=tk.Entry(win,width=35,bg="white",fg="black")
 entry1.grid(column=1, row=6)
